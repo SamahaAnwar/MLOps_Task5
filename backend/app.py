@@ -9,6 +9,7 @@ collection = db["users"]
 @app.route('/add_user', methods=['POST'])
 
 def add_user():
+    print("Successful POST")
     data = request.json
     name = data['name']
     email = data['email']
